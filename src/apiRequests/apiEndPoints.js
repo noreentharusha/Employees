@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:3001'
+const baseURL = 'https://employeeap-cf3c622db415.herokuapp.com'
 const apiEndPoints = {
     appServer: {
         addEmployee: `${baseURL}/add/employee`, // ---> POST
