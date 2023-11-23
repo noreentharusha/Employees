@@ -1,4 +1,4 @@
-const baseURL = 'https://suwivelemployeedb.onrender.com/'
+const baseURL = 'https://suwivelemployeedb.onrender.com'
 const apiEndPoints = {
     appServer: {
         addEmployee: `${baseURL}/add/employee`, // ---> POST
