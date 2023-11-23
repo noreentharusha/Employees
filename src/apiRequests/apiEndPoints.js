@@ -1,10 +1,10 @@
-const baseURL = 'https://suwivelemployeedb.onrender.com'
+const { REACT_APP_API_BASE_URL } = process.env;
 const apiEndPoints = {
     appServer: {
-        addEmployee: `${baseURL}/add/employee`, // ---> POST
-        getEmployees: `${baseURL}/get/employees`, // ---> GET
-        updateEmployee: `${baseURL}/update`, // ---> PUT
-        deleteEmployee: `${baseURL}/delete`, // ---> DELETE
+        addEmployee: `${REACT_APP_API_BASE_URL}/add/employee`, // ---> POST
+        getEmployees: `${REACT_APP_API_BASE_URL}/get/employees`, // ---> GET
+        updateEmployee: `${REACT_APP_API_BASE_URL}/update`, // ---> PUT
+        deleteEmployee: `${REACT_APP_API_BASE_URL}/delete`, // ---> DELETE
     }
 }
 export default apiEndPoints;

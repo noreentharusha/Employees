@@ -22,9 +22,10 @@ export async function handleAddEmployee(reqBody = {}) {
 //getEmployees
 export async function handlegetEmployees(reqBody = {}) {
     try {
+        debugger
         const apiReqUrl = apiEndPoints.appServer.getEmployees;
 
-        const resObj = await axios.get(apiReqUrl);
+        const resObj = await axios.get('https://suwivelemployeedb.onrender.com/get/employees');
 
         return resObj.data;
     } catch (error) {
